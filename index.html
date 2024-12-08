@@ -2,27 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Page</title>
+    <title>My Test Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
         }
         h1 {
             color: #333;
             text-align: center;
         }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
         p {
             line-height: 1.6;
             color: #666;
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
     <h1>Welcome to My Test Page</h1>
-    <p>This is a simple HTML page created for testing purposes.</p>
+
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>The way we work is changing. Instead of taking hours or days to modify a webpage, we can use AI agents to make the modifications for us.</p>
+    </section>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This page was created with Claude.ai as part of a GitHub repository setup and testing process. It showcases how Claude.ai desktop app with your GitHub API permission, can incrementally improve web content through collaborative development.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: jasoncoltrin@gmail.com | © 2024 Test Project</p>
+    </footer>
 </body>
 </html>
